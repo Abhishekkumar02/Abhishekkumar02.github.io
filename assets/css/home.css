@@ -389,9 +389,6 @@ p {
 }
 /* End Home Styles */
 
-/* Start About Styles */
-
-/* End About Styles */
 
 /* Start Services Styles */
 #services {
@@ -492,12 +489,6 @@ footer p {
   position: absolute;
   transition: all .3s ease;
 }
-/**
-*
-*  I used Normalize.css to reset elements.
-*  I used Autoprifixer to make sure that I'm using the necessary vendor prefixes.
-*
-**/
 main > div:last-child span  {
   display: none;
 }
@@ -514,16 +505,6 @@ main > div:not(:last-child) p {
     width: 200px;
     height: 140px;
 }
-/* 
-.button-cover
-{
-    height: 100px;
-    margin: 20px;
-    background-color:transparent;
-    box-shadow: 0 10px 20px -8px #c5d6d6;
-    border-radius: 4px;
-} */
-
 .button-cover:before
 {
     counter-increment: button-counter;
