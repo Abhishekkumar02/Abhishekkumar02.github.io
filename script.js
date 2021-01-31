@@ -25,7 +25,14 @@ $(function() {
       var id = $(this).attr('id'),
           offset = $(this).offset().top-1,
           height = $(this).height();
+          console.log(offset+"kkkkk")
+          console.log(height+"llllk")
+          console.log(sTop+"llllsTopk")
+      if(sTop==0){
+        $('#navbar').find('[data-scroll="' + "home" + '"]').addClass('active');
+      }
       if(sTop >= offset && sTop < offset + height) {
+        console.log("llllll")
         link.removeClass('active');
         $('#navbar').find('[data-scroll="' + id + '"]').addClass('active');
       }

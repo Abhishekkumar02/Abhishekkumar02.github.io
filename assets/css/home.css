@@ -49,6 +49,9 @@ html[data-theme="light"] {
   body{
     font-family: "Poppins";
   }
+  html,body{
+    overflow-x: hidden;
+}
   #home,
   #particles-js {
     position: relative;
@@ -222,6 +225,7 @@ html[data-theme="light"] {
   
   .socialicon:hover {
     transform: translateY(-15px);
+    font-size:6em;
 
   }
   .socialicon:hover:after {
@@ -285,7 +289,7 @@ p {
   position: fixed;
   z-index: 999;
   top: 50%;
-  right: 50px;
+  right: 30px;
   transform: translateY(-50%);
 }
 .navbar .nav-menu {
@@ -300,7 +304,7 @@ p {
 }
 .navbar .nav-menu li .dot {
   display: block;
-  color: #000;
+  color: #fff;
   padding: 5px 0;
 }
 .navbar .nav-menu li .dot::before,
@@ -316,20 +320,20 @@ p {
   width: 5px;
   height: 5px;
   right: 0;
-  border: 5px solid #181818;
+  border: var(--col-icon-navbar);
   transform: translateY(-50%);
 }
 .navbar .nav-menu li .dot::after {
   width: 15px;
   height: 15px;
-  border: 10px solid #f44336;
+  border: 10px solid #e95950;
   right: -5px;
   transform: translateY(-50%) scale(0);
 }
 .navbar .nav-menu li .dot.active::before,
 .navbar .nav-menu li:hover .dot::before {
-  background: #f44336;
-  border-color: #f44336;
+  background: #e95950;
+  border-color: #e95950;
 }
 .navbar .nav-menu li .dot.active::after,
 .navbar .nav-menu li:hover .dot::after {
@@ -341,7 +345,7 @@ p {
   font-weight: 700;
   letter-spacing: .5px;
   text-transform: capitalize;
-  background-color: #f44336;
+  background-color: #e95950;
   padding: 10px 20px;
   border-radius: 3px;
   margin-right: 30px;
@@ -352,7 +356,7 @@ p {
   display: block;
   position: absolute;
   content: '';
-  border-left: 7px solid #f44336;
+  border-left: 7px solid #e95950;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   top: 50%;
@@ -386,16 +390,7 @@ p {
 /* End Home Styles */
 
 /* Start About Styles */
-#about .container {
-  padding: 100px 0;
-}
-#about p {
-  width: 60%;
-  margin: 10px auto;
-}
-#about img {
-  margin-top: 40px;
-}
+
 /* End About Styles */
 
 /* Start Services Styles */
@@ -456,12 +451,184 @@ footer p {
   font-weight: 700;
 }
 /* End Footer Styles */
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 68%;
+  font: sans-serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: top;
+}
+.image_container {
+  position: relative;
+  width: 30%;
+}
+#home1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.image_container:hover .middle {
+  opacity: 1;
+}
+.text_abhi{
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+}
 
 
-
+.text_abhi {
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+  background-color: #e95950;
+  width: 105px;
+  border: 2px solid #e95950;
+  border-radius:  5px 5px 5px 0px;
+  position: absolute;
+  transition: all .3s ease;
+}
 /**
 *
 *  I used Normalize.css to reset elements.
 *  I used Autoprifixer to make sure that I'm using the necessary vendor prefixes.
 *
 **/
+main > div:last-child span  {
+  display: none;
+}
+
+/* Give margin-bottom to the message body except the last message */
+main > div:not(:last-child) p {
+  margin-bottom: 1.5rem;
+}
+
+
+.toggle-button-cover
+{
+    position: absolute;
+    width: 200px;
+    height: 140px;
+}
+/* 
+.button-cover
+{
+    height: 100px;
+    margin: 20px;
+    background-color:transparent;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+} */
+
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+    
+}
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button_thm
+{
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+    box-shadow: 0 10px 20px -8px #03A9F4;
+    border-radius: 4px;
+
+}
+
+.button_thm.r, .button_thm.r .layer
+{
+    border-radius: 100px;
+}
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+    
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button  */
+#button-3 .knobs:before
+{
+    content: 'ON';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 10px 4px;
+    background-color: #03A9F4;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before
+{
+    width: 46px;
+    border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before
+{
+    margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before
+{
+    content: 'OFF';
+    left: 42px;
+    background-color: #F44336;
+}
+
+#button-3 .checkbox:checked ~ .layer
+{
+    background-color: #fcebeb;
+}
