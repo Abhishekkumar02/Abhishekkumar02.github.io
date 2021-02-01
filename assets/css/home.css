@@ -390,26 +390,6 @@ p {
 /* End Home Styles */
 
 
-/* Start Services Styles */
-#services {
-  background-color: #eee;
-}
-#services .services {
-  margin: 40px auto;
-}
-#services .services .service {
-  width: 50%;
-  padding: 1%;
-}
-
-#services .text-right {
-  float: right;
-}
-#services .text-left {
-  float: left;
-}
-/* End Services Styles */
-
 /* Start Testimonials Styles */
 #test,
 #test .content-wrapper {
