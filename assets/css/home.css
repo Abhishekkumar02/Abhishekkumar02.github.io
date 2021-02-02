@@ -400,18 +400,8 @@ p {
 /* Start Contact Styles */
 #contact {
   min-height: 600px;
-  background-color: #222;
+  background-color: #000;
   color: #fff;
-}
-#contact .content-wrapper {
-  min-height: 600px;
-}
-#contact p {
-  color: #eee
-}
-#contact .mail {
-  font-size: 30px;
-  margin-top: 40px;
 }
 /* End Contact Styles */
 
@@ -810,3 +800,186 @@ main > div:not(:last-child) p {
     width: 17em;
   }
 }
+
+/*** Contact ***/
+.contact .main-content {
+  padding-bottom: 85px;
+}
+/* Left Side */
+
+.contact .custom-span-contact {
+  font-weight: 600;
+  padding-left: 50px;
+  line-height: 21px;
+  padding-top: 5px;
+}
+
+.contact .custom-span-contact i {
+  left: 0;
+  top: 10px;
+  font-size: 33px;
+}
+
+.contact .custom-span-contact i.fa-phone-square {
+  font-size: 39px;
+  top: 7px;
+}
+
+.contact .custom-span-contact span {
+  text-transform: uppercase;
+  opacity: .8;
+  font-weight: 400;
+}
+
+.contact ul.social {
+  margin-left: -5px;
+}
+
+.contact ul.social li {
+  display: inline-block;
+}
+
+.contact ul.social li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  transition: .3s;
+  font-size: 17px;
+  margin: 0 6px;
+  background: #2b2a2a;
+  border-radius: 50%;
+}
+/* Form */
+.contact .contactform input[type=text],
+.contact .contactform input[type=email] {
+  border: 1px solid #111;
+  width: 100%;
+  background: #252525;
+  color: #fff;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  transition: .3s;
+}
+
+.contact .contactform textarea {
+  border: 1px solid #111;
+  background: #252525;
+  color: #fff;
+  width: 100%;
+  padding: 12px 26px;
+  margin-bottom: 20px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 30px;
+  outline: none !important;
+  transition: .3s;
+}
+
+.contact .contactform .form-message {
+  margin: 24px 0;
+}
+
+.contact .contactform .output_message {
+  display: block;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 30px;
+}
+
+.contact .contactform .output_message.success {
+  background: #28a745;
+}
+
+.contact .contactform .output_message.success:before {
+  font-family: FontAwesome;
+  content: "\f14a";
+  padding-right: 10px;
+}
+
+.contact .contactform .output_message.error {
+  background: #dc3545;
+}
+
+.contact .contactform .output_message.error:before {
+  font-family: FontAwesome;
+  content: "\f071";
+  padding-right: 10px;
+}
+.title-section {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+}
+
+.title-section h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+.title-bg {
+  color: rgba(30, 37, 48, 0.07);
+}
+
+.title-bg {
+font-size: 110px;
+left: 0;
+letter-spacing: 10px;
+line-height: 0.7;
+position: absolute;
+right: 0;
+top: 50%;
+text-transform: uppercase;
+font-weight: 800;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+color: rgba(255, 255, 255, 0.07);
+}
+.custom-title {
+  padding-bottom: 22px;
+  font-size: 21px;
+}
+.contact  ul.social li a {
+  color: #666;
+  background: #eee;
+}
+
+.contact  ul.social li a:hover {
+  color: #fff;
+}
+
+.container {
+  padding: 0 25px;
+}
+.main-content {
+  padding-top: 85px;
+}
+.title-section h1 span,
+.contact .custom-span-contact i{
+	color: #e95950;
+}
+.contact ul.social li a:hover,
+contact ul.social li a:hover{
+	background-color: #e95950;
+}
+.contact .contactform input[type=text]:focus,
+.contact .contactform input[type=email]:focus,
+.contact .contactform textarea:focus,
+body.light.contact .contactform input[type=text]:focus,
+body.light.contact .contactform input[type=email]:focus,
+body.light.contact .contactform textarea:focus
+{
+	border: 1px solid #e95950;
+}
+
