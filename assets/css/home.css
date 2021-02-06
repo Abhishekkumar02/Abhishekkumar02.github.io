@@ -1,5 +1,4 @@
 /*Declaration of CSS variables for light/dark theme*/
-
 html[data-theme="light"] {
     --col-icon: black;
     --col-bd-radius:rgb(2, 2, 2);
@@ -69,7 +68,7 @@ html[data-theme="light"] {
     font-weight: bold;
   }
   .txt{
-    color: #e95950;
+    color: #2874A6;
   }
   .text {
     font-size: 25px;
@@ -254,9 +253,7 @@ p {
   color: #565656;
   line-height: 1.8;
 }
-.section {
-  min-height: 700px;
-}
+
 .container {
   width: 1170px;
   max-width: 90%;
@@ -326,14 +323,14 @@ p {
 .navbar .nav-menu li .dot::after {
   width: 15px;
   height: 15px;
-  border: 10px solid #e95950;
+  border: 10px solid #2874A6;
   right: -5px;
   transform: translateY(-50%) scale(0);
 }
 .navbar .nav-menu li .dot.active::before,
 .navbar .nav-menu li:hover .dot::before {
-  background: #e95950;
-  border-color: #e95950;
+  background: #2874A6;
+  border-color: #2874A6;
 }
 .navbar .nav-menu li .dot.active::after,
 .navbar .nav-menu li:hover .dot::after {
@@ -345,7 +342,7 @@ p {
   font-weight: 700;
   letter-spacing: .5px;
   text-transform: capitalize;
-  background-color: #e95950;
+  background-color: #2874A6;
   padding: 10px 20px;
   border-radius: 3px;
   margin-right: 30px;
@@ -356,7 +353,7 @@ p {
   display: block;
   position: absolute;
   content: '';
-  border-left: 7px solid #e95950;
+  border-left: 7px solid #2874A6;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   top: 50%;
@@ -453,9 +450,9 @@ footer p {
   font-weight: 700;
   letter-spacing: .5px;
   text-transform: capitalize;
-  background-color: #e95950;
+  background-color: #2874A6;
   width: 105px;
-  border: 2px solid #e95950;
+  border: 2px solid #2874A6;
   border-radius:  5px 5px 5px 0px;
   position: absolute;
   transition: all .3s ease;
@@ -634,16 +631,15 @@ main > div:not(:last-child) p {
 
 #termialp {
   position: relative;
-  left: 50%;
+  left: 45%;
   margin-left: -8.5em;
   text-align: left;
   font-size: 1.25em;
   font-family: monospace;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 0;
 }
-
 /* - */
 
 .line1 {
@@ -839,7 +835,12 @@ main > div:not(:last-child) p {
 .contact ul.social li {
   display: inline-block;
 }
-
+.social-icon {
+  display: flex;
+  font-size: 20px;
+  margin-left: -25px;
+  flex-flow: row wrap;
+}
 .contact ul.social li a {
   display: inline-block;
   height: 40px;
@@ -884,7 +885,10 @@ main > div:not(:last-child) p {
 .contact .contactform .form-message {
   margin: 24px 0;
 }
-
+.contact .btn-contact{
+  border-radius: 2x soild #2874A6;
+  background-color:rgb(19, 145, 184);
+}
 .contact .contactform .output_message {
   display: block;
   color: #fff;
@@ -904,7 +908,7 @@ main > div:not(:last-child) p {
 }
 
 .contact .contactform .output_message.error {
-  background: #dc3545;
+  background: #2874A6;
 }
 
 .contact .contactform .output_message.error:before {
@@ -959,7 +963,9 @@ color: rgba(255, 255, 255, 0.07);
 .contact  ul.social li a:hover {
   color: #fff;
 }
-
+.contact_text{
+  color: #fff;
+}
 .container {
   padding: 0 25px;
 }
@@ -968,11 +974,11 @@ color: rgba(255, 255, 255, 0.07);
 }
 .title-section h1 span,
 .contact .custom-span-contact i{
-	color: #e95950;
+	color: #2874A6;
 }
 .contact ul.social li a:hover,
 contact ul.social li a:hover{
-	background-color: #e95950;
+	background-color: #2874A6;
 }
 .contact .contactform input[type=text]:focus,
 .contact .contactform input[type=email]:focus,
@@ -981,5 +987,44 @@ body.light.contact .contactform input[type=text]:focus,
 body.light.contact .contactform input[type=email]:focus,
 body.light.contact .contactform textarea:focus
 {
-	border: 1px solid #e95950;
+	border: 1px solid #2874A6;
 }
+
+.fa-quote-right{
+  
+  text-align: right;
+  margin-right: -20px;
+}
+.fa-quote-left{
+  margin-top: -10px;
+  margin-left: -20px;
+}
+.pre-heading{
+  font-size: 20px;
+  color: #2874A6;
+font-family: 'Sriracha', cursive;
+}
+
+.sectiontitle {
+  background-position: center;
+  text-align: center;
+  min-height: 20px;
+}
+
+.sectiontitle h2 {
+  font-size: 30px;
+  color: #000;
+  font-family: 'Modern';
+  margin-bottom: -5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.headerLine {
+  width: 110px;
+  height: 2px;
+  font-weight: bold;
+  display: inline-block;
+  background: #2874A6;
+}
+
