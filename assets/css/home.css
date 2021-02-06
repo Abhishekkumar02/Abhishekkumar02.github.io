@@ -255,7 +255,7 @@ p {
   line-height: 1.8;
 }
 .section {
-  min-height: 800px;
+  min-height: 700px;
 }
 .container {
   width: 1170px;
@@ -401,6 +401,7 @@ p {
 #contact {
   min-height: 600px;
   background-color: #000;
+  overflow-y:hidden;
   color: #fff;
 }
 /* End Contact Styles */
@@ -982,4 +983,3 @@ body.light.contact .contactform textarea:focus
 {
 	border: 1px solid #e95950;
 }
-

@@ -19,6 +19,8 @@
    inset #4D4D4D -2px -2px 4px;
     --col-bd-icon:transparent;
     --bg-icon: #fff;
+    --col-icon-scroller:3px solid #000;
+    --col-icon-scroll:#000;
     /* --col-icon-twitter: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
@@ -46,6 +48,8 @@
     --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
     --txt-fill: transparent;
     --col-icon:white;
+    --col-icon-scroll: #fff;
+    --col-icon-scroller: 3px solid #fff;
     --col-icon-navbar: 5px solid #fff;
     --col-bd-radius:black;
     --col-bd-icon:transparent;
@@ -80,7 +84,7 @@
     width: 30px;
     height: 60px;
     margin-top: 30px;
-    border: 3px solid #000;
+    border: var(--col-icon-scroller);
     border-radius: 15px;
     position: relative;
   }
@@ -88,14 +92,19 @@
   .scroller{
     width: 16px;
     border-radius: 8px;
-    background-color: #000;
+    background-color: #e95950;
     position: absolute;
     top: 4px;
     left: 4px;
     bottom: 34px;
     animation: scroller 1500ms ease-out infinite;
   }
-  
+  .scroll_text{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    color: var(--col-icon-scroll);
+  }
   @keyframes scroller{
     0%{
       bottom: 34px;
