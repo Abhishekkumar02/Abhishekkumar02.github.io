@@ -959,6 +959,16 @@ color: rgba(255, 255, 255, 0.07);
     text-align: center;
   }
 }
+@media (max-width: 375px) {
+  .title-bg {
+    font-size:55px;
+    text-align: center;
+  }
+  .title-section h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 .custom-title {
   padding-bottom: 22px;
   font-size: 21px;
