@@ -6,8 +6,8 @@ new Chart(document.getElementById("radar-chart"), {
         {
           label: "1950",
           fill: true,
-          backgroundColor: "rgba(179,181,198,0.2)",
-          borderColor: "rgba(179,181,198,1)",
+          backgroundColor: "rgba(0,0,0,0.2)",
+          borderColor: "rgba(255,255,255,1)",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
           data: [8.77,55.61,21.69,6.62,6.82]
