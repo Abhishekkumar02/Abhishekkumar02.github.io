@@ -1,32 +1,23 @@
 new Chart(document.getElementById("radar-chart1"), {
     type: 'radar',
     data: {
-      labels: ["Python", "Java", "C/C++", "DS & algo", "Android"],
+      labels: ["Python", "Java", "C", "C++", "DS & Algo"],
       datasets: [
         {
-          label: "1950",
+          label: "Programming language and DSA",
           fill: true,
           backgroundColor: "rgba(0,0,0,0.2)",
           borderColor: "#0e76a8",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
-          data: [90,90,90,90,90]
-        }, {
-          label: "2050",
-          fill: true,
-          backgroundColor: "rgba(255,99,132,0.2)",
-          borderColor: "#0e76a8",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(255,99,132,1)",
-          pointBorderColor: "#fff",
-          data: [25.48,54.16,7.61,8.06,4.45]
+          data: [90,85,90,85,75]
         }
       ]
     },
     options: {
       title: {
         display: true,
-        text: 'Distribution in % of world population'
+        text: 'Programming language'
       }
     }
 });
@@ -34,32 +25,23 @@ new Chart(document.getElementById("radar-chart1"), {
 new Chart(document.getElementById("radar-chart2"), {
     type: 'radar',
     data: {
-      labels: ["Python", "Java", "C/C++", "DS & algo", "Android"],
+      labels: ["HTML", "CSS", "JavaScript", "Reactjs"],
       datasets: [
         {
-          label: "1950",
+          label: "Web development",
           fill: true,
           backgroundColor: "rgba(0,0,0,0.2)",
           borderColor: "#0e76a8",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
-          data: [8.77,55.61,21.69,6.62,6.82]
-        }, {
-          label: "2050",
-          fill: true,
-          backgroundColor: "rgba(255,99,132,0.2)",
-          borderColor: "#0e76a8",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(255,99,132,1)",
-          pointBorderColor: "#fff",
-          data: [25.48,54.16,7.61,8.06,4.45]
+          data: [90,85.61,77,70]
         }
       ]
     },
     options: {
       title: {
         display: true,
-        text: 'Distribution in % of world population'
+        text: 'Web development'
       }
     }
 });
@@ -76,15 +58,6 @@ new Chart(document.getElementById("radar-chart3"), {
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
           data: [8.77,55.61,21.69,6.62,6.82]
-        }, {
-          label: "2050",
-          fill: true,
-          backgroundColor: "rgba(255,99,132,0.2)",
-          borderColor: "#0e76a8",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(255,99,132,1)",
-          pointBorderColor: "#fff",
-          data: [25.48,54.16,7.61,8.06,4.45]
         }
       ]
     },
