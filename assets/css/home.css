@@ -1161,3 +1161,8 @@ font-family: 'Sriracha', cursive;
 .chart{
   color: #000;
 }
+
+.skill_chart{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
