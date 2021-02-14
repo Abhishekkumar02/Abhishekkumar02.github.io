@@ -1046,9 +1046,16 @@ font-family: 'Sriracha', cursive;
   display: inline-block;
   background: #2874A6;
 }
-
+.headerLine1 {
+  width: 110px;
+  font-weight: bold;
+  display: inline-block;
+  background: #fff;
+}
 /* project section */
-
+.projects .container{
+  margin-top: 30px;
+}
 
 /* project section */
 
@@ -1156,13 +1163,4 @@ font-family: 'Sriracha', cursive;
 }
 .text_pro{
   color: white;
-}
-
-.chart{
-  color: #000;
-}
-
-.skill_chart{
-  margin-top: 20px;
-  margin-bottom: 100px;
 }
