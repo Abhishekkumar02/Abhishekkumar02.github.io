@@ -21,6 +21,14 @@ html[data-theme="light"] {
     --col-icon-codeforces:rgb(19, 145, 184);
     --col-icon-leetcode:rgb(255, 181, 62);
     --shadow-col: rgba(0, 0, 0, 0.3);
+    --bg-col: #fafafa;
+    --shadow1: rgba(0, 0, 0, 0.3);
+    --shadow2: rgba(0, 0, 0, 0.2);
+  
+    --neu-light: white;
+    --neu-dark: #c3c3c3;
+    --neu-color: #c3c3c3;
+    --neu-icon: #c3c3c3;
   
   }
   
@@ -43,6 +51,14 @@ html[data-theme="light"] {
     --col-icon-codeforces:rgb(19, 145, 184);
     --col-icon-leetcode:rgb(255, 181, 62);
     --col-white: #fff;
+    --bg-col: #272727;
+    --shadow1: rgba(128, 122, 122, 0.233);
+    --shadow2: rgba(231, 216, 216, 0.007);
+  
+    --neu-light: #282828;
+    --neu-dark: #080808;
+    --neu-color: white;
+    --neu-icon: whitesmoke;
   }
   /* Particle effect*/
   body{
