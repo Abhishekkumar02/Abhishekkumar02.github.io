@@ -1001,9 +1001,9 @@ color: rgba(255, 255, 255, 0.07);
 .contact_text{
   color: #fff;
 }
-.container {
+/* .container {
   padding: 0 25px;
-}
+} */
 .main-content {
   padding-top: 30px;
 }
@@ -1179,4 +1179,7 @@ font-family: 'Sriracha', cursive;
 }
 .text_pro{
   color: white;
+}
+.project_card{
+  margin-top: 30px;
 }
