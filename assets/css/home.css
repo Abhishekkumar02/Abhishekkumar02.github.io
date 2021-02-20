@@ -9,6 +9,7 @@ html[data-theme="light"] {
     --col-bd-icon:transparent;
     --bg-icon: #fff;
      --bg1-color: #fff;
+     --col-icon-link: #fff;
     --col-icon-instagram: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
@@ -43,6 +44,7 @@ html[data-theme="light"] {
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
     --col-icon-code: #00ab6c;
+    --col-icon-link: #000;
     --col-icon-hackerrank: #41aff3;
     --col-icon-github:  #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
@@ -205,6 +207,9 @@ html[data-theme="light"] {
   
   .socialicon.code{
     color: var(--col-icon-code);
+  }
+  .flink{
+    color: var(--col-icon-link);
   }
   .socialicon:after {
     content: "";
@@ -1072,14 +1077,29 @@ font-family: 'Sriracha', cursive;
 .projects .container{
   margin-top: 30px;
 }
-
+.projects{
+  margin-bottom: 40px;
+}
 /* project section */
 
 .card {
-  float: left;
-  padding: 1rem;
-  min-width: 400px;
-  min-height: 80px;
+  /* float: left; */
+  padding: 10px;
+  min-width: 370px;
+  min-height: 90px;
+}
+.card_o{
+  margin-bottom: 20px;
+}
+.card_text{
+  color: #0e76a8;
+}
+.card-content{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-image img{
+  margin-bottom: 30px;
 }
 .card .menu-content {
   margin: 0;

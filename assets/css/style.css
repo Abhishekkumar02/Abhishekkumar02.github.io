@@ -12,6 +12,7 @@
     --text: #191919;
     --text-color: #6c757d;
     --col-icon: black;
+    --col-icon-link: #fff;
     --col-bd-radius:rgb(2, 2, 2);
     --col-box-shadow:#000000 2px 2px 4px, 
     #4D4D4D -2px -2px 4px;
@@ -60,6 +61,7 @@
     --col-icon-scroller: 3px solid #fff;
     --col-icon-navbar: 5px solid #fff;
     --col-bd-radius:black;
+    --col-icon-link: #000;
     --col-bd-icon:transparent;
     --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
     --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
