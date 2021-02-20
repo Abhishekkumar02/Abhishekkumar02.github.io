@@ -9,6 +9,7 @@ html[data-theme="light"] {
     --col-bd-icon:transparent;
     --bg-icon: #fff;
      --bg1-color: #fff;
+     --col-icon-heading:#2874A6;
      --col-icon-link: #fff;
     --col-icon-instagram: #1da1f2;
     --col-icon-dribbble: #ea4c89;
@@ -45,6 +46,7 @@ html[data-theme="light"] {
     --col-icon-linkedin: #0e76a8;
     --col-icon-code: #00ab6c;
     --col-icon-link: #000;
+    --col-icon-heading: #fff;
     --col-icon-hackerrank: #41aff3;
     --col-icon-github:  #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
@@ -1053,7 +1055,7 @@ font-family: 'Sriracha', cursive;
 
 .sectiontitle h2 {
   font-size: 30px;
-  color: #121f2b;
+  color:var(--col-icon-heading);
   font-family: 'Modern';
   margin-bottom: -5px;
   padding-right: 10px;

@@ -13,6 +13,7 @@
     --text-color: #6c757d;
     --col-icon: black;
     --col-icon-link: #fff;
+    --col-icon-heading: #2874A6;
     --col-bd-radius:rgb(2, 2, 2);
     --col-box-shadow:#000000 2px 2px 4px, 
     #4D4D4D -2px -2px 4px;
@@ -49,6 +50,7 @@
   html[data-theme="dark"] {
     --bg-mybtn: rgb(230, 109, 129);
     --bg-nav: #6617cb;
+    --col-icon-heading: #fff;
     --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
     --bg-footer:linear-gradient(315deg, #6617cb 0%, #882463 74%);
     --bg: #191919;
