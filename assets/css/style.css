@@ -2,6 +2,11 @@
     font-family: "Agustina";
     src: url(../fonts/Agustina.woff);
   }
+  @font-face
+  {
+      font-family: "Comic Sans MS" !important;
+      src: url('../fonts/Comic Sans MS Regular/comic.ttf');
+  }
   /*CSS variable declaration for light/dark mode*/
   html[data-theme="light"]{
     --bg-mybtn: red;
@@ -104,6 +109,7 @@
     width: 30px;
     height: 60px;
     margin-top: 30px;
+    margin-bottom: -50px;
     border: var(--col-icon-scroller);
     border-radius: 15px;
     position: relative;
@@ -122,6 +128,7 @@
   .scroll_text{
     font-size: 15px;
     font-weight: bold;
+    margin-top: 50px;
     color: black;
     color: var(--col-icon-scroll);
   }
@@ -185,7 +192,7 @@
     border-radius: 0;
   }
   .skill .container {
-    background-color: #2874A6;
+    background-color: #fff;
     border-radius: 10px;
     margin-top: 20px;
   }
@@ -196,7 +203,7 @@
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: #2874A6;
   }
   
   .skills .progress .skill .val {
@@ -205,14 +212,14 @@
   }
   
   .skills .progress-bar-wrap {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
   }
   
   .skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #fff;
+    background-color: #2874A6;
   }
 
   .img-header{
@@ -600,3 +607,7 @@
         flex-direction: column-reverse;
     }
   }
+
+#display{
+  font-family: "Comic Sans MS", cursive;
+}

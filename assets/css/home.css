@@ -87,6 +87,7 @@ html[data-theme="light"] {
   
   .text .header {
     font-weight: bold;
+    
   }
   .txt{
     color: #2874A6;
@@ -654,7 +655,7 @@ main > div:not(:last-child) p {
   left: 45%;
   margin-left: -8.5em;
   text-align: left;
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: monospace;
   white-space: nowrap;
   /* overflow: hidden; */
